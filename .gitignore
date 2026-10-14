@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.test-output*/
+.vite-cache/
+.direnv/
+.agents/skills/
+.pnpm/
+.vitest/

@@ -1,0 +1,208 @@
+{
+  "nodes": {
+    "agent-browser": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1787420080,
+        "narHash": "sha256-FtB7AXqrROZs8UZv8UtxtofZwj4VlEERRFhEIXsZ3Y0=",
+        "owner": "vercel-labs",
+        "repo": "agent-browser",
+        "rev": "f9a6cc34212340dad62b114559f7a306c4be0707",
+        "type": "github"
+      },
+      "original": {
+        "owner": "vercel-labs",
+        "repo": "agent-browser",
+        "type": "github"
+      }
+    },
+    "agent-skills-nix": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1790154098,
+        "narHash": "sha256-SviEpvFefXCPOmQ2b41c4ujE7BzWYJ/h8p/HZNxD2B8=",
+        "owner": "Kyure-A",
+        "repo": "agent-skills-nix",
+        "rev": "dc122af897ab9a685c20ae54c639021619dbbb52",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Kyure-A",
+        "repo": "agent-skills-nix",
+        "type": "github"
+      }
+    },
+    "daisyui": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1787429630,
+        "narHash": "sha256-e5Uoa9pPkHigx8r/Hd4byZZYLALLyCq5lSIuoGdf3Uo=",
+        "owner": "saadeghi",
+        "repo": "daisyui",
+        "rev": "c6e1800bc15ab0287b8c2b802c126ccee6361beb",
+        "type": "github"
+      },
+      "original": {
+        "owner": "saadeghi",
+        "repo": "daisyui",
+        "type": "github"
+      }
+    },
+    "flake-utils": {
+      "inputs": {
+        "systems": "systems"
+      },
+      "locked": {
+        "lastModified": 1731533236,
+        "narHash": "sha256-l0KFg5HjrsfsO/JpG+r7fRrqm12kzFHyUHqHCVpMMbI=",
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "rev": "11707dc2f618dd54ca8739b309ec4fc024de578b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "type": "github"
+      }
+    },
+    "impeccable": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1787356750,
+        "narHash": "sha256-HqWNpH2R9vhFvBFt9QBXAUwSbjV26bfePMBr3uokX4Y=",
+        "owner": "pbakaus",
+        "repo": "impeccable",
+        "rev": "56f44523f76efdcec813e67b38ee550e49b16f48",
+        "type": "github"
+      },
+      "original": {
+        "owner": "pbakaus",
+        "repo": "impeccable",
+        "type": "github"
+      }
+    },
+    "mizchi-skills": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1784050221,
+        "narHash": "sha256-ayMrZJ+3OD+f4azULSfgFh84UIQSoi+fhSOYvwWq45A=",
+        "owner": "mizchi",
+        "repo": "skills",
+        "rev": "7a0d72866a0bb3e9ac3e2768c328b09ba2bc40c4",
+        "type": "github"
+      },
+      "original": {
+        "owner": "mizchi",
+        "repo": "skills",
+        "type": "github"
+      }
+    },
+    "moonbit": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1787205668,
+        "narHash": "sha256-EmpA7MmpvhH5VQa1IvhfgHxpM59Q40v9fVWGahft5pg=",
+        "owner": "moonbitlang",
+        "repo": "skills",
+        "rev": "0d956f0ecd0b09ce16a0c341780998473d251db4",
+        "type": "github"
+      },
+      "original": {
+        "owner": "moonbitlang",
+        "repo": "skills",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1791366222,
+        "narHash": "sha256-o0N4g6uSOIppU7CGToNvGlMf5vC+B6O6ukFHKY/TKOY=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "39ad350a0602fa0a58a544344e3e9187526ea45c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixpkgs-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "quint": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1787234128,
+        "narHash": "sha256-83qNsH6SgkT1/dOWMVxC6CuOvBxMiozJapngZvPXOKg=",
+        "owner": "quint-co",
+        "repo": "quint",
+        "rev": "6fb2924e00707cef6dbc5e30db606d555c447123",
+        "type": "github"
+      },
+      "original": {
+        "owner": "quint-co",
+        "repo": "quint",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "agent-skills-nix": "agent-skills-nix",
+        "flake-utils": "flake-utils",
+        "nixpkgs": "nixpkgs",
+        "skills": "skills"
+      }
+    },
+    "skills": {
+      "inputs": {
+        "agent-browser": "agent-browser",
+        "agent-skills-nix": [
+          "agent-skills-nix"
+        ],
+        "daisyui": "daisyui",
+        "impeccable": "impeccable",
+        "mizchi-skills": "mizchi-skills",
+        "moonbit": "moonbit",
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "quint": "quint"
+      },
+      "locked": {
+        "lastModified": 1790428602,
+        "narHash": "sha256-I3K5XDlsMlIrJm5bIg10roGySxZHURC4zmk/p5jDeOQ=",
+        "owner": "toshiki-higa",
+        "repo": "skills",
+        "rev": "28346c8a7a095a583aabbfab8055f0a0255a6bdd",
+        "type": "github"
+      },
+      "original": {
+        "owner": "toshiki-higa",
+        "repo": "skills",
+        "type": "github"
+      }
+    },
+    "systems": {
+      "locked": {
+        "lastModified": 1681028828,
+        "narHash": "sha256-Vy1rq5AaRuLzOxct8nz4T6wlgyUR7zLU309k9mBC768=",
+        "owner": "nix-systems",
+        "repo": "default",
+        "rev": "da67096a3b9bf56a91d16901293e51ba5b49a27e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-systems",
+        "repo": "default",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
