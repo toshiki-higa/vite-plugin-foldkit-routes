@@ -2,7 +2,9 @@
 
 A Vite plugin that adds file-based routing to Foldkit.
 
-Uses native Foldkit Schema, Model, Message, and Command. Targets Vite 8, Effect 4.0.0, and Foldkit 0.167.0. This package is private and unpublished.
+Uses native Foldkit Schema, Model, Message, and Command. Targets Vite 8, Effect 4.0.0, and Foldkit 0.167.0.
+
+Experimental. Not yet published to npm. Licensed under [MIT](./LICENSE).
 
 ## How to use
 

@@ -2,10 +2,31 @@
   "name": "vite-plugin-foldkit-routes",
   "version": "0.1.0",
   "private": true,
-  "description": "Native Foldkit file routes, layouts and generated composition for Vite",
+  "description": "File-based routing and typed layouts for Foldkit, powered by Vite",
+  "keywords": [
+    "effect",
+    "effect-ts",
+    "file-based-routing",
+    "foldkit",
+    "router",
+    "routing",
+    "typescript",
+    "vite",
+    "vite-plugin"
+  ],
+  "homepage": "https://github.com/toshiki-higa/vite-plugin-foldkit-routes#readme",
+  "bugs": {
+    "url": "https://github.com/toshiki-higa/vite-plugin-foldkit-routes/issues"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/toshiki-higa/vite-plugin-foldkit-routes.git"
+  },
   "files": [
     "dist",
-    "README.md"
+    "README.md",
+    "LICENSE"
   ],
   "type": "module",
   "exports": {
