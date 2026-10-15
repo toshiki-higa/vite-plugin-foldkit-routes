@@ -1,0 +1,17 @@
+{
+  "name": "foldkit-routes-example",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "effect": "catalog:",
+    "foldkit": "catalog:"
+  },
+  "devDependencies": {
+    "@foldkit/vite-plugin": "catalog:",
+    "@types/node": "catalog:",
+    "typescript": "catalog:",
+    "vite": "catalog:",
+    "vite-plugin-foldkit-routes": "workspace:*",
+    "vite-plus": "catalog:"
+  }
+}

@@ -355,7 +355,7 @@ export const restore=(model:Model,url:Url.Url):RestoreDecision=>{
  if(!validRestoreTree(result.model,true))return {_tag:'Reset',reason:'InvalidTree'};
  return {_tag:'Resume',result:{model:result.model,...(result.commands===undefined?{}:{commands:result.commands.map(command=>Command.mapEffect(command,Effect.provideService(Urls,{build:buildUrl})))})}};
 };
-export const subscriptions=Subscription.aggregate(${subscriptions.join(',')});
+export const subscriptions=${subscriptions.length ? `Subscription.aggregate(${subscriptions.join(',')})` : 'Subscription.aggregate<Model,Message>()()'};
 export type SubscriptionRequirements=import('vite-plugin-foldkit-routes/subscriptions').SubscriptionRequirements<typeof subscriptions>;
 ${owners.map(emitRender).join('\n')}
 export const view=Submodel.defineView<Model,Message>((model,h)=>{

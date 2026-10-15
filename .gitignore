@@ -6,3 +6,4 @@ dist/
 .agents/skills/
 .pnpm/
 .vitest/
+examples/*/src/**/*.gen.ts

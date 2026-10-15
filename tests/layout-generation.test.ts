@@ -1,6 +1,7 @@
 import { test } from 'vite-plus/test';
 import assert from 'node:assert/strict';
-import { readFile } from 'node:fs/promises';
+import { readFile, realpath } from 'node:fs/promises';
+import { tmpdir } from 'node:os';
 import path from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { generateRoot } from '../src/generate.ts';
@@ -11,7 +12,8 @@ test(
   'independent strict fixture: arbitrary ancestry, gates, context, semantic init/inform output and root NotFound',
   { timeout: 30_000 },
   async () => {
-    const root = await temporaryDirectory('/private/tmp/layout-emitter-');
+    // Canonicalize OS aliases such as macOS /tmp; the writer rejects symlink ancestors.
+    const root = await temporaryDirectory(path.join(await realpath(tmpdir()), 'layout-emitter-'));
     const put = (file: string, content: string) => putFile(root, file, content);
     await linkFixturePackage(root);
     await put(

@@ -44,16 +44,17 @@
     }
   },
   "scripts": {
+    "dev": "vp run foldkit-routes-example#dev",
     "build": "vp pack",
     "check": "vp check",
     "test": "vp test"
   },
   "devDependencies": {
-    "@foldkit/vite-plugin": "0.27.0",
-    "@types/node": "26.6.4",
-    "effect": "4.0.0",
-    "foldkit": "0.167.0",
-    "typescript": "7.0.2",
+    "@foldkit/vite-plugin": "catalog:",
+    "@types/node": "catalog:",
+    "effect": "catalog:",
+    "foldkit": "catalog:",
+    "typescript": "catalog:",
     "vite": "catalog:",
     "vite-plus": "catalog:"
   },

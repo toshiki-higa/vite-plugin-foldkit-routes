@@ -164,6 +164,24 @@ settings:
 
 catalogs:
   default:
+    '@foldkit/vite-plugin':
+      specifier: 0.27.0
+      version: 0.27.0
+    '@types/node':
+      specifier: 26.6.4
+      version: 26.6.4
+    effect:
+      specifier: 4.0.0
+      version: 4.0.0
+    foldkit:
+      specifier: 0.167.0
+      version: 0.167.0
+    typescript:
+      specifier: 7.0.2
+      version: 7.0.2
+    vite:
+      specifier: npm:@voidzero-dev/vite-plus-core@1.1.0
+      version: 1.1.0
     vite-plus:
       specifier: 1.1.0
       version: 1.1.0
@@ -180,20 +198,48 @@ importers:
         version: '@voidzero-dev/vite-plus-core@1.1.0(@types/node@26.6.4)(typescript@7.0.2)'
     devDependencies:
       '@foldkit/vite-plugin':
-        specifier: 0.27.0
+        specifier: 'catalog:'
         version: 0.27.0(@voidzero-dev/vite-plus-core@1.1.0(@types/node@26.6.4)(typescript@7.0.2))(effect@4.0.0)(foldkit@0.167.0(@effect/platform-browser@4.0.0(effect@4.0.0))(effect@4.0.0))(redis@6.3.0)
       '@types/node':
-        specifier: 26.6.4
+        specifier: 'catalog:'
         version: 26.6.4
       effect:
-        specifier: 4.0.0
+        specifier: 'catalog:'
         version: 4.0.0
       foldkit:
-        specifier: 0.167.0
+        specifier: 'catalog:'
         version: 0.167.0(@effect/platform-browser@4.0.0(effect@4.0.0))(effect@4.0.0)
       typescript:
-        specifier: 7.0.2
+        specifier: 'catalog:'
         version: 7.0.2
+      vite-plus:
+        specifier: 'catalog:'
+        version: 1.1.0(@types/node@26.6.4)(@vitest/ui@5.0.3)(typescript@7.0.2)
+
+  examples/basic:
+    dependencies:
+      effect:
+        specifier: 'catalog:'
+        version: 4.0.0
+      foldkit:
+        specifier: 'catalog:'
+        version: 0.167.0(@effect/platform-browser@4.0.0(effect@4.0.0))(effect@4.0.0)
+    devDependencies:
+      '@foldkit/vite-plugin':
+        specifier: 'catalog:'
+        version: 0.27.0(@voidzero-dev/vite-plus-core@1.1.0(@types/node@26.6.4)(typescript@7.0.2))(effect@4.0.0)(foldkit@0.167.0(@effect/platform-browser@4.0.0(effect@4.0.0))(effect@4.0.0))(redis@6.3.0)
+      '@types/node':
+        specifier: 'catalog:'
+        version: 26.6.4
+      typescript:
+        specifier: 'catalog:'
+        version: 7.0.2
+      vite:
+        specifier: 'catalog:'
+        version: '@voidzero-dev/vite-plus-core@1.1.0(@types/node@26.6.4)(typescript@7.0.2)'
+      vite-plugin-foldkit-routes:
+        specifier: workspace:*
+        version: link:../..
       vite-plus:
         specifier: 'catalog:'
         version: 1.1.0(@types/node@26.6.4)(@vitest/ui@5.0.3)(typescript@7.0.2)

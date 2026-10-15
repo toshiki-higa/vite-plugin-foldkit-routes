@@ -1,6 +1,13 @@
+packages:
+  - examples/*
 verifyDepsBeforeRun: false
 enableGlobalVirtualStore: false
 catalog:
+  '@foldkit/vite-plugin': 0.27.0
+  '@types/node': 26.6.4
+  effect: 4.0.0
+  foldkit: 0.167.0
+  typescript: 7.0.2
   vite: npm:@voidzero-dev/vite-plus-core@1.1.0
   vite-plus: 1.1.0
 overrides:

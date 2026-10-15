@@ -80,6 +80,7 @@ export const view: View = (model, _input, h) => h.p([], [String(model.count)]);
     assert.equal(App.href({to:'/counter'}),'/counter');
     const result=App.init(url);
     assert.equal(result.model.page._tag,'/counter');
+    assert.deepEqual(App.subscriptions,{});
     Schema.encodeSync(Schema.toCodecJson(App.Model))(result.model);
   `,
     ],
